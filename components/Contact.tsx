@@ -39,27 +39,28 @@ export default function Contact() {
           </div>
         </Reveal>
 
-
         {/* Contact Content */}
         <Reveal delay={0.15}>
           <div className="max-w-2xl">
 
+            {/* Heading */}
             <h3 className="text-2xl font-semibold">
               Let's connect.
             </h3>
 
+            {/* Main Description */}
             <p className="mt-5 text-lg leading-8 text-gray-400">
               I'm interested in connecting with people working
               on artificial intelligence, machine learning, and
               practical AI solutions.
             </p>
 
+            {/* Secondary Description */}
             <p className="mt-4 leading-7 text-gray-500">
               Whether it's an AI project, collaboration,
               opportunity, or simply a conversation about AI,
               feel free to reach out.
             </p>
-
 
             {/* Contact Buttons */}
             <div className="mt-10 flex flex-wrap gap-4">
@@ -88,7 +89,6 @@ export default function Contact() {
                 Email Me
               </a>
 
-
               {/* LinkedIn */}
               <a
                 href="https://www.linkedin.com/in/faran-khan-dev/"
@@ -115,7 +115,6 @@ export default function Contact() {
                 <FaLinkedin />
                 LinkedIn
               </a>
-
 
               {/* GitHub */}
               <a
@@ -144,27 +143,31 @@ export default function Contact() {
                 GitHub
               </a>
 
-            </div>
-
-
-            {/* Email Address */}
-            <div className="mt-12 border-t border-gray-800 pt-8">
-
-              <p className="text-sm text-gray-500">
-                Email
-              </p>
-
+              {/* Book a Call */}
               <a
-                href="mailto:faran.khan.dev@gmail.com"
+                href="https://calendly.com/contact759me/15-minute-intro-call"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="
-                  mt-2
-                  inline-block
-                  text-gray-300
+                  inline-flex
+                  items-center
+                  gap-3
+                  rounded-full
+                  border
+                  border-gray-700
+                  px-6
+                  py-3
+                  text-sm
+                  font-semibold
+                  text-white
                   transition
-                  hover:text-white
+                  duration-300
+                  hover:-translate-y-1
+                  hover:border-gray-400
                 "
               >
-                faran.khan.dev@gmail.com
+                <span aria-hidden="true">📅</span>
+                Book a Call
               </a>
 
             </div>
@@ -172,13 +175,11 @@ export default function Contact() {
           </div>
         </Reveal>
 
-
         {/* Footer */}
         <div className="mt-24 border-t border-gray-800 pt-8">
 
           <p className="text-sm text-gray-600">
-            © {new Date().getFullYear()} Faran Khan. All rights
-            reserved.
+            © {new Date().getFullYear()} Faran Khan. All rights reserved.
           </p>
 
         </div>
