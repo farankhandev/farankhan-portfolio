@@ -86,7 +86,19 @@ export default function Hero() {
           </p>
 
           {/* Buttons */}
-          <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row md:justify-start">
+          <div
+            className="
+              mt-9
+              flex
+              flex-col
+              items-center
+              gap-4
+              sm:flex-row
+              sm:flex-wrap
+              md:justify-start
+            "
+          >
+            {/* View Projects */}
             <a
               href="#projects"
               className="
@@ -98,12 +110,15 @@ export default function Hero() {
                 font-semibold
                 text-black
                 transition
+                duration-300
+                hover:-translate-y-1
                 hover:bg-gray-200
               "
             >
               View Projects
             </a>
 
+            {/* Contact */}
             <a
               href="#contact"
               className="
@@ -116,11 +131,37 @@ export default function Hero() {
                 font-semibold
                 text-white
                 transition
+                duration-300
+                hover:-translate-y-1
                 hover:bg-white
                 hover:text-black
               "
             >
               Contact Me
+            </a>
+
+            {/* Download CV */}
+            <a
+              href="/Faran.Khan.Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                rounded-full
+                border
+                border-gray-600
+                px-7
+                py-3
+                text-sm
+                font-semibold
+                text-white
+                transition
+                duration-300
+                hover:-translate-y-1
+                hover:bg-white
+                hover:text-black
+              "
+            >
+              Download CV
             </a>
           </div>
         </motion.div>
@@ -133,9 +174,9 @@ export default function Hero() {
           className="shrink-0"
         >
           <div
-  className="
-    relative
-    h-56
+            className="
+              relative
+              h-56
               w-56
               overflow-hidden
               rounded-full
@@ -149,13 +190,13 @@ export default function Hero() {
             "
           >
             <Image
-  src="/profile.jpg"
-  alt="Faran Khan"
-  fill
-  priority
-  sizes="(max-width: 640px) 224px, (max-width: 1024px) 256px, 320px"
-  className="rounded-full object-cover"
-/>
+              src="/profile.jpg"
+              alt="Faran Khan"
+              fill
+              priority
+              sizes="(max-width: 640px) 224px, (max-width: 1024px) 256px, 320px"
+              className="rounded-full object-cover"
+            />
           </div>
         </motion.div>
       </div>
