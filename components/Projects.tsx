@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Reveal from "./Reveal";
 
 const projects = [
@@ -17,10 +17,14 @@ const projects = [
     ],
 
     github: "https://github.com/farankhandev/ml-backend",
+
+    live: "https://ml-dashboard-phi.vercel.app/",
   },
 ];
 
 export default function Projects() {
+  const project = projects[0];
+
   return (
     <section
       id="projects"
@@ -55,7 +59,6 @@ export default function Projects() {
             </p>
           </div>
         </Reveal>
-
 
         {/* Project */}
         <Reveal direction="up" delay={0.15}>
@@ -126,7 +129,6 @@ export default function Projects() {
                 </div>
               </div>
 
-
               {/* Project Information */}
               <div className="p-8 md:p-10">
 
@@ -135,19 +137,16 @@ export default function Projects() {
                 </p>
 
                 <h3 className="mt-4 text-3xl font-semibold">
-                  House Price Prediction API
+                  {project.title}
                 </h3>
 
                 <p className="mt-5 max-w-xl leading-8 text-gray-400">
-                  A machine learning powered REST API that predicts
-                  house prices from property features using a
-                  trained regression model.
+                  {project.description}
                 </p>
-
 
                 {/* Technologies */}
                 <div className="mt-7 flex flex-wrap gap-2">
-                  {projectTechnologies.map((technology) => (
+                  {project.technologies.map((technology) => (
                     <span
                       key={technology}
                       className="
@@ -167,11 +166,12 @@ export default function Projects() {
                   ))}
                 </div>
 
+                {/* Project Links */}
+                <div className="mt-9 flex flex-wrap gap-4">
 
-                {/* GitHub */}
-                <div className="mt-9">
+                  {/* Live Demo */}
                   <a
-                    href={projects[0].github}
+                    href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
@@ -187,17 +187,44 @@ export default function Projects() {
                       text-black
                       transition
                       duration-300
+                      hover:-translate-y-1
                       hover:bg-gray-200
-                      hover:gap-4
+                    "
+                  >
+                    <FaExternalLinkAlt />
+                    Live Demo
+                  </a>
+
+                  {/* GitHub */}
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                      inline-flex
+                      items-center
+                      gap-3
+                      rounded-full
+                      border
+                      border-gray-700
+                      px-6
+                      py-3
+                      text-sm
+                      font-semibold
+                      text-white
+                      transition
+                      duration-300
+                      hover:-translate-y-1
+                      hover:border-gray-400
                     "
                   >
                     <FaGithub />
                     View on GitHub
                   </a>
+
                 </div>
 
               </div>
-
             </div>
           </article>
         </Reveal>
@@ -206,16 +233,3 @@ export default function Projects() {
     </section>
   );
 }
-
-
-/*
-  Keep the technologies separate so the project card
-  stays easy to update as you add more AI projects.
-*/
-const projectTechnologies = [
-  "Python",
-  "Scikit-learn",
-  "NumPy",
-  "Flask",
-  "Joblib",
-];
