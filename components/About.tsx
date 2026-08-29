@@ -19,7 +19,17 @@ export default function About() {
         {/* Section Heading */}
         <Reveal>
           <div className="mb-14">
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-gray-500">
+            <p
+              className="
+                mb-3
+                text-xs
+                uppercase
+                tracking-[0.25em]
+                text-gray-500
+                sm:text-sm
+                sm:tracking-[0.3em]
+              "
+            >
               Get to know me
             </p>
 
@@ -31,7 +41,6 @@ export default function About() {
           </div>
         </Reveal>
 
-
         {/* Main Content */}
         <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr]">
 
@@ -39,26 +48,58 @@ export default function About() {
           <Reveal direction="left" delay={0.1}>
             <div className="space-y-6">
 
-              <p className="text-lg leading-8 text-gray-300">
+              <p
+                className="
+                  text-base
+                  leading-7
+                  text-gray-100
+                  sm:text-lg
+                  sm:leading-8
+                "
+              >
                 I'm Faran Khan, an aspiring AI Engineer focused on
                 building practical solutions with artificial
                 intelligence and machine learning.
               </p>
 
-              <p className="leading-8 text-gray-400">
+              <p
+                className="
+                  text-base
+                  leading-7
+                  text-gray-100
+                  sm:text-lg
+                  sm:leading-8
+                "
+              >
                 I'm building a strong foundation in Python,
                 data analysis, machine learning, and AI systems
                 through hands-on projects and continuous learning.
               </p>
 
-              <p className="leading-8 text-gray-400">
+              <p
+                className="
+                  text-base
+                  leading-7
+                  text-gray-100
+                  sm:text-lg
+                  sm:leading-8
+                "
+              >
                 I enjoy turning machine learning concepts into
                 practical applications and exploring how modern
                 AI technologies can be used to solve real-world
                 problems.
               </p>
 
-              <p className="leading-8 text-gray-400">
+              <p
+                className="
+                  text-base
+                  leading-7
+                  text-gray-100
+                  sm:text-lg
+                  sm:leading-8
+                "
+              >
                 My goal is to continue growing as an AI Engineer
                 and eventually build intelligent systems that are
                 useful, reliable, and impactful.
@@ -66,7 +107,6 @@ export default function About() {
 
             </div>
           </Reveal>
-
 
           {/* Current Focus Card */}
           <Reveal direction="right" delay={0.2}>
@@ -95,11 +135,10 @@ export default function About() {
                     Focus
                   </p>
 
-                  <p className="mt-1 text-gray-300">
+                  <p className="mt-1 text-base text-gray-300">
                     Artificial Intelligence
                   </p>
                 </div>
-
 
                 {/* Machine Learning */}
                 <div>
@@ -107,11 +146,10 @@ export default function About() {
                     Learning
                   </p>
 
-                  <p className="mt-1 text-gray-300">
+                  <p className="mt-1 text-base text-gray-300">
                     Machine Learning
                   </p>
                 </div>
-
 
                 {/* Programming */}
                 <div>
@@ -119,11 +157,10 @@ export default function About() {
                     Programming
                   </p>
 
-                  <p className="mt-1 text-gray-300">
+                  <p className="mt-1 text-base text-gray-300">
                     Python
                   </p>
                 </div>
-
 
                 {/* Data */}
                 <div>
@@ -131,11 +168,10 @@ export default function About() {
                     Data
                   </p>
 
-                  <p className="mt-1 text-gray-300">
+                  <p className="mt-1 text-base text-gray-300">
                     NumPy & Pandas
                   </p>
                 </div>
-
 
                 {/* Goal */}
                 <div>
@@ -143,7 +179,7 @@ export default function About() {
                     Goal
                   </p>
 
-                  <p className="mt-1 text-gray-300">
+                  <p className="mt-1 text-base text-gray-300">
                     Building intelligent AI systems
                   </p>
                 </div>
