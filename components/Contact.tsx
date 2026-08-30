@@ -23,9 +23,9 @@ export default function Contact() {
     const formData = new FormData(form);
 
     formData.append(
-      "access_key",
-      "9e6496be-027e-4f11-ba8c-6ff897b7ef3a"
-    );
+  "access_key",
+  process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || ""
+);
 
     formData.append(
       "subject",
