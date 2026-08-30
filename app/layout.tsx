@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://faran-khan-portfolio.vercel.app"),
+
   title: "Faran Khan | AI Engineer",
 
   description:
@@ -30,6 +32,8 @@ export const metadata: Metadata = {
 
     description:
       "AI Engineer focused on artificial intelligence, machine learning, Python, and practical AI solutions.",
+
+    url: "https://faran-khan-portfolio.vercel.app",
 
     type: "website",
 
